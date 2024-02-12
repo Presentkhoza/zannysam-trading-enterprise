@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quote</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpeg" rel="icon">
+  <link href="assets/img/logo.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * 
+  * Updated: Nov 25 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../img/BG.jpg") top center; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    }
+
+    .inner-page {
+        padding: 100% 0;
+    }
+
+    .container1 {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color:black;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease-in-out;
+        color: black;
+    }
+
+    input:hover,
+    select:hover,
+    textarea:hover {
+        border-color: rgba(38, 190, 168, 0.5);
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+    select {
+    appearance: none; /* Disable default styles on some browsers */
+    -webkit-appearance: none; /* Disable default styles on WebKit browsers like Chrome and Safari */
+    -moz-appearance: none; /* Disable default styles on Firefox */
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Style the dropdown container when open */
+select:focus {
+    outline: none; /* Remove focus outline */
+    background-color:#fff;
+    color: #fff;
+}
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 5px;
+  background-color: #1b1a1a;
+}
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value as needed */
+
+}
+  .header {
+    justify-content: center; /* Align on the left */
+    margin-right: 15px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(38, 190, 168, 0.5); /* Add your desired background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow if needed */
+    z-index: 1000;
+  }
+
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #header h1.log {
+    font-size: 24px;
+    display: absolute;
+    justify-content: center; /* Align on the left */
+    margin-right: 15px;
+
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #header a.log img {
+    padding: 10px 15px;
+    max-height: 40px;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+   <div header id="header" class="fixed-top" class="container">
+
+      <h1 class="log">Zanny Sam Trading Enterprise<span>.</span>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="log"><img src="assets/img/logo.jpeg" alt="" class="img-fluid"></a></h1>
+
+      
+      
+<!-----
+         <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>--->
+         <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul> -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="inner-page.html" class="get-started-btn scrollto">Get a Quote</a>
+
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="quote">
+        <h2>Quote Page</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Quote Page</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  
+
+
+  <main id="main">
+
+   
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+   
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+   
+      body {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 30px;
+        color: #ffffff;
+        background: rgb(255, 255, 255);
+      }
+   
+      .container {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+   
+      #contact input {
+        font: 400 12px/16px;
+        width: 100%;
+        border: 1px solid #CCC;
+        background: #FFF;
+        margin: 10 5px;
+        padding: 10px;
+      }
+   
+      h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+   
+      #contact {
+        background: #000000;
+        padding: 25px;
+        margin: 50px 0;
+      }
+   
+   
+      fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+      }
+   
+      textarea {
+        height: 100px;
+        max-width: 100%;
+        resize: none;
+        width: 100%;
+      }
+   
+      button {
+        cursor: pointer;
+        width: 100%;
+        border-color: #f9a528;
+        background:#f9ae52;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 20px;
+      }
+   
+      button:hover {
+        background-color: #FB8C00;
+      }
+    </style>
+     
+  </head>
+  <section>
+  <body>
+    <div class="container">
+      <form id="contact" action="send_email.php" method="post">
+        <h1>Quotation Form</h1>
+   
+        <fieldset>
+          <input placeholder="Your name" name="name" type="text" tabindex="1" required >
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+        </fieldset>
+
+        <fieldset>
+          <input placeholder="Mobile Number" name="phone" type="phone" tabindex="3" required>
+        </fieldset>
+        
+        <div class="form-group">
+          <label for="fq_services">Zanny Sam Trading Enterprise Services</label>
+          <select class="form-control btn-block" id="fq_services" name="fq_services" required>
+              <option value="services">--Select--</option>
+              <option value="service1">Air-Conditioner Installation</option>
+              <option value="service2">Refrigerators</option>
+              <option value="service3">Electric Motors</option>
+          </select>
+      </div>
+      <!-- Additional fields for Air-Conditioner Installation service -->
+      <div id="air_conditioner_fields" style="display: none;">
+        <div class="form-group">
+            <label for="fq_services">Room Size</label>
+            <select class="form-control " id="room_size" name="room_size">
+                <option value="single_door">--Select--</option>
+                <option value="15-18">15 to 18 m2</option>
+                <option value="20-25">20 to 25 m2</option>
+                <option value="30-35">30 to 35 m2</option>
+                <option value="40-45">40 to 45 m2</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fq_services">Air Conditioner Size</label>
+            <select class="form-control" id="air_conditioner_size" name="air_conditioner_size">
+                <!-- Options will be dynamically populated based on the selected room -->
+            </select>
+        </div>
+    </div>
+
+
+    <div id="refrigerator_fields" style="display: none;">
+  <div class="form-group">
+      <label for="fq_services">Refrigerator Type</label>
+      <select class="form-control" id="refrigerator_type" name="refrigerator_type">
+          <option value="single_door" required>--Select--</option>
+          <option value="single_door">Bottom freezer</option>
+          <option value="double_door">Compact refrigerator</option>
+          <option value="side_by_side">Side-by-Side refrigerator</option>
+          <!-- Add more options as needed -->
+       
+      </select>
+  </div>
+
+  <div class="form-group">
+      <label for="fq_services">Refrigerator Color</label>
+      <select class="form-control" id="refrigerator_color" name="refrigerator_color">
+        <option value="single_door" required>--Select--</option>
+          <option value="white">White</option>
+          <option value="silver">Silver</option>
+          <option value="black">Black</option>
+          <!-- Add more options as needed -->
+      </select>
+  </div>
+</div>
+
+<div id="electric_motor_fields" style="display: none;">
+<div class="form-group">
+    <label for="fq_services">Electric Motor Type</label>
+    <select class="form-control " id="electric_motor_type" name="electric_motor_type">
+        <option value="single_door"required>--Select--</option>
+        <option value="induction">Ram Gate Operators</option>
+        <option value="synchronous">Underground Gate Openers</option>
+        <option value="induction" >Linear Screw Type Automatic Gate Openers</option>
+      
+        <!-- Add more options as needed -->
+    </select>
+</div>
+</div>
+        <fieldset>
+          <input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
+        </fieldset>
+        <fieldset>
+          <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
+        </fieldset>
+   
+        <fieldset>
+          <button type="submit" name="send" id="contact-submit">Submit Now</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</section>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Zannysam Trading Enterprise</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+       
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/php-email-form/send_email.js"></script>
+
+  <!--  Main JS File -->
+ <script src="assets/js/main.js"></script>
+</body>
+</html>
+  <script> 
+    document.getElementById("fq_services").addEventListener("change", function () {
+            var selectedService = this.value;
+            var airConditionerFields = document.getElementById("air_conditioner_fields");
+            var refrigeratorFields = document.getElementById("refrigerator_fields");
+            var electricMotorFields = document.getElementById("electric_motor_fields");
+
+            // Show additional fields based on the selected service
+            if (selectedService === "service1") {  // Air-Conditioner Installation
+                airConditionerFields.style.display = "block";
+                refrigeratorFields.style.display = "none";
+                electricMotorFields.style.display = "none";
+            } else if (selectedService === "service2") {  // Refrigerators
+                airConditionerFields.style.display = "none";
+                refrigeratorFields.style.display = "block";
+                electricMotorFields.style.display = "none";
+            } else if (selectedService === "service3") {  // Electric Motors
+                airConditionerFields.style.display = "none";
+                refrigeratorFields.style.display = "none";
+                electricMotorFields.style.display = "block";
+            } else {
+                airConditionerFields.style.display = "none";
+                refrigeratorFields.style.display = "none";
+                electricMotorFields.style.display = "none";
+            }
+        });
+        document.getElementById("fq_services").addEventListener("change", function () {
+            var selectedService = this.value;
+            var airConditionerFields = document.getElementById("air_conditioner_fields");
+
+            // Show additional fields based on the selected service
+            if (selectedService === "service1") {  // Air-Conditioner Installation
+                airConditionerFields.style.display = "block";
+                updateAirConditionerSizeOptions(); // Call the function to update Air Conditioner Size options
+            } else {
+                airConditionerFields.style.display = "none";
+            }
+        });
+
+        document.getElementById("room_size").addEventListener("change", function () {
+            // Call the function to update Air Conditioner Size options whenever the Room Size changes
+            updateAirConditionerSizeOptions();
+        });
+
+        function updateAirConditionerSizeOptions() {
+            var roomSizeSelect = document.getElementById("room_size");
+            var selectedRoomSize = roomSizeSelect.value;
+            var airConditionerSizeSelect = document.getElementById("air_conditioner_size");
+
+            // Clear existing options
+            airConditionerSizeSelect.innerHTML = "";
+
+            // Add options based on the selected room size
+            if (selectedRoomSize === "15-18") {
+                addOption(airConditionerSizeSelect, "9000", "9,000 BTU");
+            } else if (selectedRoomSize === "20-25") {
+                addOption(airConditionerSizeSelect, "12000", "12,000 BTU");
+            } else if (selectedRoomSize === "30-35") {
+                addOption(airConditionerSizeSelect, "18000", "18,000 BTU");
+            } else if (selectedRoomSize === "40-45") {
+                addOption(airConditionerSizeSelect, "24000", "24,000 BTU");
+            }
+        }
+
+        function addOption(selectElement, value, text) {
+            var option = document.createElement("option");
+            option.value = value;
+            option.text = text;
+            selectElement.add(option);
+        }
+        </script>
